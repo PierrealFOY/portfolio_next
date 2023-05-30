@@ -32,7 +32,7 @@ function Navbar (): React.JSX.Element {
     // const [navbar, setNavbar] = useState(false);
 
     return (
-        <header className="w-full mx-auto px-4 bg-white shadow fixed top-0 z-0">
+        <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
             <div className="justify-between md:items-center md:flex">
                 <div>
                     <div className="md:py-5 md:block">
@@ -44,13 +44,19 @@ function Navbar (): React.JSX.Element {
                         return <a key={idx}>{item.label}</a>
                     })}
                     {currentTheme === "dark" ? (
-                        <button>
-                            <RiSunLine />
+                        <button 
+                            onClick={() => setTheme("light")}
+                            className=" bg-slate-100 p-2 rounded-xl"
+                        >
+                            <RiSunLine size={25} color="black"/>
                         </button>
                     ) : (
-                    <button>
-                        <RiMoonFill />
-                    </button>
+                        <button
+                            onClick={() => setTheme("dark")}
+                            className=" bg-slate-100 p-2 rounded-xl"
+                        >
+                            <RiMoonFill size={25} />
+                        </button>
                     )}
                 </div>
             </div>
