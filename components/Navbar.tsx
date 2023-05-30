@@ -39,7 +39,7 @@ function Navbar (): React.JSX.Element {
                         <h2 className="text-2xl font-bold">Pierre-Alexis Foy</h2>
                     </div>
                 </div>
-                <div className=" items-center md:flex md:space-x-6">
+                <div className=" items-center justify-center md:flex md:space-x-6">
                     {NAV_ITEMS.map((item, idx) => {
                         return <a key={idx}>{item.label}</a>
                     })}
