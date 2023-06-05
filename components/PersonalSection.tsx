@@ -1,7 +1,11 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-comment-textnodes */
+"use client"
 import React from 'react'
 import Image from "next/image"
+import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
+/* eslint-disable react/no-unescaped-entities */
+
 
 function PersonalSection() {
     return (
@@ -19,8 +23,17 @@ function PersonalSection() {
                     </p>
                 </div>
             </div>
-            <div>
-                <HiArrowDown className='animate-bounce' size={34}/>
+            <div className='flex flex-row items-center text-center justify-center'>
+                <Link
+                    to="about"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}       
+                >
+                    <HiArrowDown className='animate-bounce' size={34}/>
+                </Link>                
             </div>
         </section>
     )
