@@ -28,7 +28,7 @@ function DisplayMessageMan() {
                     onMouseOver={handleMouseOver}
                     onMouseOut={handleMouseOut}
                 />
-                <div>
+                <div className='absolute top-12 left-14 translate-x-1/2 '>
                     {hover && (
                         <div className='rounded-full border-4 p-3'>
                             <h2 className='flex items-center justify-center text-black'>
