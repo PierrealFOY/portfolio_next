@@ -1,6 +1,7 @@
 import PersonalSection from "@/components/PersonalSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import DisplayMessageMan from "@/components/DisplayMessageMan";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <PersonalSection />
       <AboutSection />
       <ProjectsSection />
+      <DisplayMessageMan />
     </main>
   )
 }

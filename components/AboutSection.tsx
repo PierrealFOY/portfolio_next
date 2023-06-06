@@ -38,7 +38,7 @@ function AboutSection() {
                                 className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 border border-teal-700 rounded ml-2 mt-2"
                                 href="/CV_PA.pdf"
                                 target="_blank"
-                                >
+                            >
                                 Mon CV
                             </Link>
                         </p>
@@ -62,15 +62,6 @@ function AboutSection() {
                             </div>
                         <p>
                         </p>
-                        <div className='hover:scale-150'>
-                            <Image 
-                                src="/manSayHiAbout.svg"
-                                alt=""
-                                width={310}
-                                height={310}
-                                className="hidden transition-transform duration-300 transform md:block md:relative md:bottom-4 md:left-32 md:z-0 mt-5"
-                            />
-                        </div>
                     </div>
                 </div>
             </div>
