@@ -29,19 +29,32 @@ function AboutSection() {
                 <div className='flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left'>
                     <div className='md:w-1/2'>
                         <h1 className='text-center text-2xl font-bold mb-6 md:text-left'>
-                            Quelques informations sur moi
+                            Quelques infos
                         </h1>
-                        <p>
-                            Description à ajouter ICI
-                            Pour accéder à mon CV c'est juste ici
-                            <Link 
-                                className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 border border-teal-700 rounded ml-2 mt-2"
-                                href="/CV_PA.pdf"
-                                target="_blank"
-                            >
-                                Mon CV
-                            </Link>
+                        <p className='flex flex-wrap md:mt-5 md:ml-2 text-2xl'>
+                            Après avoir effectué la formation Développeur Web et Web Mobile au sein de l'Ecole O'Clock et avoir obtenu le Titre Professionnel du même nom (DWWM), j'ai décidé de continuer à me former dans le domaine du développement. A partir de Septembre 2023, je continue l'aventure avec l'école O'Clock, cette fois-ci en tant qu'alternant dans le cadre de la formation Concepteur Développeur d'Applications.
+                            Je suis donc à la recherche d'une entreprise en contrat d'apprentissage, en partenariat avec le CFA Afia, qui s'occupe du suivi de mon alternance et de la partie administrative de celle-ci.
+                            La formation m'a permis de réaliser de nombreuses applications et fonctionnalités web, autant coté Front que côté Back. 
+                            Pour accéder à mon CV c'est juste en dessous :
+                            <span className='mt-3'>
+                                <Link 
+                                    className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 border border-teal-700 rounded ml-2 mt-2"
+                                    href="/CV_PA.pdf"
+                                    target="_blank"
+                                >
+                                    Mon CV
+                                </Link>
+                            </span>
                         </p>
+                        <div>
+                            <Image
+                                src="/CvDrawing.svg"
+                                alt=""
+                                width={120}
+                                height={120}
+                                className=" transition-transform duration-300 transform md:block  md:top-20 md:right-8 mt-5"
+                            />                            
+                        </div>
                     </div>
                     <div className='text-center md:w-1/2 md:text-left'>
                         <h1 className='text-2xl font-bold mb-6'>

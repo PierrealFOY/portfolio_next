@@ -36,7 +36,7 @@ function DisplayMessageMan() {
 
     return (
             <div 
-                className='mt-5 relative flex flex-row w-full h-90'
+                className=' mt-5 justify-center relative flex flex-row h-90'
                 onMouseEnter={handleMouseOver}
                 onMouseLeave={handleMouseOut}
             >
@@ -55,7 +55,7 @@ function DisplayMessageMan() {
                     height={310}
                     className=" hidden transition-transform duration-300 transform md:block  md:top-20 md:right-8 mt-5" 
                 />
-                <div className=' absolute top-5 right-12 translate-x-1/2 '>
+                <div className='mr-1 absolute top-5 right-12 translate-x-1/2 '>
                     {hover && (
                         <div className='flex flex-wrap overflow-hidden rounded-lg border-4 p-3'>
                                 <h2 className='text-2xl font-bold flex items-center justify-center '>
