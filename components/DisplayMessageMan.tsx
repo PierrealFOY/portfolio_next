@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import Image from "next/image"
 import Link from 'next/link'
+import { FaArrowRight } from 'react-icons/fa'
 
 
 function DisplayMessageMan() {
@@ -35,10 +36,18 @@ function DisplayMessageMan() {
 
     return (
             <div 
-            className='relative flex flex-row h-90'
-            onMouseEnter={handleMouseOver}
-            onMouseLeave={handleMouseOut}
+                className='mt-5 relative flex flex-row w-full h-90'
+                onMouseEnter={handleMouseOver}
+                onMouseLeave={handleMouseOut}
             >
+                <div className='absolute z-index'>
+                    <div className=''>
+                        <p className='pr-2 ease-in duration-300'>
+                            Passe la souris au-dessus
+                        </p>
+                        <FaArrowRight className='text-3xl'/>
+                    </div>
+                </div>
                 <Image
                     src="/manSayHiAbout.svg"
                     alt=""
@@ -48,7 +57,7 @@ function DisplayMessageMan() {
                 />
                 <div className=' absolute top-5 right-12 translate-x-1/2 '>
                     {hover && (
-                        <div className='overflow-hidden rounded-lg border-4 p-3'>
+                        <div className='flex flex-wrap overflow-hidden rounded-lg border-4 p-3'>
                                 <h2 className='text-2xl font-bold flex items-center justify-center '>
                                     Si vous voulez me contacter :
                                 </h2>
@@ -58,6 +67,7 @@ function DisplayMessageMan() {
                                             <Link
                                             key={id}
                                             href={item.adress}
+                                            target="_blank"
                                             className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
                                             >
                                                     {item.network + ' : ' + item.adress}  
