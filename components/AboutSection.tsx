@@ -3,8 +3,8 @@
 import React from 'react'
 import Image from "next/image"
 import Link from 'next/link'
-import { Link as Scroller } from "react-scroll/modules";
-// import { Link } from "react-scroll/modules";
+import { Link as Scroller} from "react-scroll/modules";
+
 import { Button } from '@mui/material';
 import { HiArrowDown } from "react-icons/hi"
 
@@ -24,10 +24,10 @@ const skills = [
 function AboutSection() {
     return (
         <section id="about"> 
-            <div className='my-12 pb-12 md:pt-16 md:pb-48'>
-                <h1 className='text-center font-bold text-4xl'> 
+            <div className='my-12 pb-12 md:pt-16 md:pb-26'>
+                <h1 className='text-center font-bold text-4xl '> 
                     A propos de moi
-                    <hr className="w-11 h-2 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+                    <hr className="w-20 h-2 mx-auto my-4 bg-orange-500 border-0 rounded"></hr>
                 </h1>
                 <div className='flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left'>
                     <div className='md:w-1/2'>
@@ -41,7 +41,7 @@ function AboutSection() {
                             Pour accéder à mon CV c'est juste en dessous :
                             <span className='mt-3'>
                                 <Link 
-                                    className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 border border-teal-700 rounded ml-2 mt-2"
+                                    className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 border border-orange-700 rounded ml-2 mt-2"
                                     href="/CV_PA.pdf"
                                     target="_blank"
                                 >
@@ -81,9 +81,10 @@ function AboutSection() {
                     </div>
                 </div>
             </div>
+
             <div className='flex flex-row items-center text-center justify-center'>
                 <Scroller
-                    to="about"
+                    to="projectsSection"
                     activeClass="active"
                     spy={true}
                     smooth={true}

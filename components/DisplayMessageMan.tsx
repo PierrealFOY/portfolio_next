@@ -48,7 +48,7 @@ function DisplayMessageMan() {
                 {contacts.map((item, id) => (
                     <Link
                         key={id}
-                        href={item.adress}
+                        to={item.adress}
                         target="_blank"
                         className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
                     >
@@ -75,7 +75,7 @@ function DisplayMessageMan() {
                             return (
                                 <Link
                                 key={id}
-                                href={item.adress}
+                                to={item.adress}
                                 target="_blank"
                                 className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
                                 >
