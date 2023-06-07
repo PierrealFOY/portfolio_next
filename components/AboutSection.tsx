@@ -2,8 +2,9 @@
 "use client"
 import React from 'react'
 import Image from "next/image"
-// import Link from 'next/link'
-import { Link } from "react-scroll/modules";
+import Link from 'next/link'
+import { Link as Scroller } from "react-scroll/modules";
+// import { Link } from "react-scroll/modules";
 import { Button } from '@mui/material';
 import { HiArrowDown } from "react-icons/hi"
 
@@ -41,7 +42,7 @@ function AboutSection() {
                             <span className='mt-3'>
                                 <Link 
                                     className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 border border-teal-700 rounded ml-2 mt-2"
-                                    to="/CV_PA.pdf"
+                                    href="/CV_PA.pdf"
                                     target="_blank"
                                 >
                                     Mon CV
@@ -81,7 +82,7 @@ function AboutSection() {
                 </div>
             </div>
             <div className='flex flex-row items-center text-center justify-center'>
-                <Link
+                <Scroller
                     to="about"
                     activeClass="active"
                     spy={true}
@@ -90,7 +91,7 @@ function AboutSection() {
                     duration={500}       
                 >
                     <HiArrowDown className='animate-bounce' size={34}/>
-                </Link>                
+                </Scroller>                
             </div>
         </section>
     )
