@@ -4,6 +4,7 @@ import React from 'react'
 import Image from "next/image"
 import Link from 'next/link'
 import { Link as Scroller} from "react-scroll/modules";
+
 import { Button } from '@mui/material';
 import { HiArrowDown } from "react-icons/hi"
 
@@ -80,7 +81,8 @@ function AboutSection() {
                     </div>
                 </div>
             </div>
-            <div className='mb-10 flex flex-row items-center text-center justify-center'>
+
+            <div className='flex flex-row items-center text-center justify-center'>
                 <Scroller
                     to="projectsSection"
                     activeClass="active"

@@ -3,8 +3,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Image from "next/image"
-// import Link from 'next/link'
-import { Link } from "react-scroll/modules";
+import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
 import { HiArrowDown } from "react-icons/hi"
 
