@@ -36,55 +36,40 @@ function DisplayMessageMan() {
     ]
 
     return (
-        <div 
-            className='mt-5 flex flex-col md:p-4 md:flex-row '
-            onMouseEnter={handleMouseOver}
-            onMouseLeave={handleMouseOut}
-        >
-            {/* <div className='hidden absolute z-index'>
-                <div className=''>
-                    <p className='pr-2 ease-in duration-300'>
-                    </p>
-                    <FaArrowRight className='text-3xl'/>
-                </div>
-            </div> */}
-            <div className='hidden md:block md:ml-1 md:mt-2'>
-                <Image
-                    src="/manSayHiAbout.svg"
-                    alt=""
-                    width={300}
-                    height={300}
-                    className=" " 
-                />
+        <section id="contacts">
+            <div 
+                className="mt-5 flex flex-col md:flex-row"
+                onMouseEnter={handleMouseOver}
+                onMouseLeave={handleMouseOut}
+            >
+            <div className="md:hidden flex flex-wrap flex-col overflow-hidden rounded-lg border-4 p-3">
+                {contacts.map((item, id) => (
+                    <Link
+                    key={id}
+                    href={item.adress}
+                    target="_blank"
+                    className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                    >
+                    {item.network + ' : ' + item.adress}
+                    </Link>
+                ))}
             </div>
-            <div className='md:pl-3'>
-                {hover ? (
-                    <div className='hidden md:flex md:flex-wrap md:flex-col md:overflow-hidden md:rounded-lg md:border-4 md:p-3'>
-                        <h2 className='md:text-left-0 text-2xl font-bold md:flex items-center justify-center '>
+                <div className="hidden md:flex md:flex-row md:mr-1 md:mt-2">
+                    <h2 className="pr-8 text-xl font-bold flex items-center justify-center">
+                        Pour me contacter, survole moi avec ta souris
+                    </h2>
+                    <Image src="/manSayHiAbout.svg" alt="" width={300} height={300} />
+                </div>
+                {/* <div
+                    className="pl-3 relative"
+
+                > */}
+                {hover && (
+                    <div className="md:flex md:flex-wrap md:flex-col md:overflow-hidden md:rounded-lg md:border-4 md:p-3">
+                        <h2 className="md:text-left-0 text-2xl font-bold flex items-center justify-center">
                             Pour me contacter :
                         </h2>
-                        {
-                            contacts.map((item, id) => {
-                                return (
-                                    <Link
-                                        key={id}
-                                        href={item.adress}
-                                        target="_blank"
-                                        className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                                    >
-                                        {item.network + ' : ' + item.adress}  
-                                    </Link>
-                                );
-                            })
-                        }
-                    </div>
-            ) : (
-                <div className='flex flex-wrap flex-col overflow-hidden rounded-lg border-4 p-3'>
-                    <h2 className='text-left-0 text-2xl font-bold flex items-center justify-center '>
-                        Pour me contacter :
-                    </h2>
-                    {
-                        contacts.map((item, id) => {
+                        {contacts.map((item, id) => {
                             return (
                                 <Link
                                 key={id}
@@ -92,16 +77,21 @@ function DisplayMessageMan() {
                                 target="_blank"
                                 className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
                                 >
-                                        {item.network + ' : ' + item.adress}  
+                                {item.network + ' : ' + item.adress}
                                 </Link>
                             );
-                        })
-                    }
+                        })}
+                    </div>
+                )}
+                <div className="absolute top-0 right-0 p-4">
+                    <div className="flex items-center">
+                        <p className="pr-2 ease-in duration-300"></p>
+                        <FaArrowRight className="text-3xl" />
+                    </div>
                 </div>
-            )}
-        </div>
-        </div>
-    );
+            </div>
+        </section>
+    )
 }
 
 export default DisplayMessageMan
