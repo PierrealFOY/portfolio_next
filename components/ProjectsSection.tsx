@@ -29,11 +29,11 @@ const projects = [
 
 function ProjectsSection() {
     return (
-        <section id="projectsSection"> 
+        <section id="projectsSection" className='my-12 pb-12 md:pt-16 md:pb-26'> 
             <div>
                 <h1 className='my-12 text-center font-bold text-4xl'>
                     Projets
-                    <hr className='w-20 h-2 mx-auto my-4 bg-teal-500 border-0 rounded'></hr>
+                    <hr className='w-20 h-2 mx-auto my-4 bg-orange-500 border-0 rounded'></hr>
                 </h1>
             </div>
             <div className='flex flex-col space-y-20'>
@@ -87,9 +87,9 @@ function ProjectsSection() {
                     })
                 }
             </div>
-            <div className='flex flex-row py-10 text-2xl md:space-x-10 font-bold'>
+            <div className='flex flex-row py-10 text-xl md:space-x-10 font-bold'>
                 <h2>
-                    J'ai codé énormément (la grande majorité) des applications et composants web au cours de ma formation chez O'Clock. Pour des raisons légales et de droit de propriété, je ne peux pas les présenter, ainsi que leurs repos sur GitHub. Mais demandez moi plus d'infos sur les composants et applications codés !
+                    J'ai énormément codé (la grande majorité) les applications et composants web au cours de ma formation chez O'Clock. Pour des raisons légales et de droit de propriété, je ne peux pas les présenter, ainsi que leurs repos sur GitHub. Mais demandez moi plus d'infos sur les composants et applications codés !
                     Il y a encore plein d'autres applications et projets en cours et à venir... 
                 </h2>
                 <p>
