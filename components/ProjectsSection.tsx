@@ -43,7 +43,7 @@ function ProjectsSection() {
                             <div key={id}>
                                 <div className='flex flex-col md:flex md:flex-row md:space-x-10'>
                                     <div className='mt-6 md:w-1/2'>
-                                        <Link href={project.link} target="_blank">
+                                        <Link to={project.link} target="_blank">
                                             <Image 
                                                 src={project.image}
                                                 alt=""
