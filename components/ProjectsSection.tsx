@@ -2,7 +2,8 @@
 "use client"
 import React from 'react'
 import Image from "next/image"
-import { Link } from "react-scroll/modules";
+import Link from "next/link"
+import { Link as Scroll }   from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi"
 import { FiGithub } from "react-icons/fi"
 import { FiExternalLink } from "react-icons/fi"
@@ -23,7 +24,7 @@ const projects = [
         description: "Petite application web permettant de calculer son age en années, en mois et en jours. ",
         image: "/ageCalculator.jpg",
         link: "https://pierrealfoy.github.io/Age_Calculator_Js/",
-        gitRepo: "https://github.com/PierrealFOY/Age_Calculator_Js"
+        gitRepo: "https://github.com/PierrealFOY/Age_Calculator_Js/"
     },
 ]
 
@@ -43,7 +44,7 @@ function ProjectsSection() {
                             <div key={id}>
                                 <div className='flex flex-col md:flex md:flex-row md:space-x-10'>
                                     <div className='mt-6 md:w-1/2'>
-                                        <Link to={project.link} target="_blank">
+                                        <Link href={project.link} target="_blank">
                                             <Image 
                                                 src={project.image}
                                                 alt=""
@@ -62,7 +63,7 @@ function ProjectsSection() {
                                         </p>
                                         <div className='flex flex-row pt-4 space-x-5'>
                                             <Link 
-                                                href={project.gitRepo}
+                                                href={project.gitRepo ? project.gitRepo : ''}
                                                 target="_blank"
                                             >
                                                 <FiGithub 
@@ -100,7 +101,7 @@ function ProjectsSection() {
                 </p>
             </div>
             <div className='flex flex-row items-center text-center justify-center'>
-                <Link
+                <Scroll
                     to="contacts"
                     activeClass="active"
                     spy={true}
@@ -109,7 +110,7 @@ function ProjectsSection() {
                     duration={500}       
                 >
                     <HiArrowDown className='animate-bounce' size={34}/>
-                </Link>                
+                </Scroll>                
             </div>
         </section>
     )
