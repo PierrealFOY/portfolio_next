@@ -2,9 +2,11 @@
 "use client"
 import React from 'react'
 import Image from "next/image"
-import Link from 'next/link'
-// import { Link } from "react-scroll/modules"
+// import Link from 'next/link'
+import { Link } from "react-scroll/modules";
 import { Button } from '@mui/material';
+import { HiArrowDown } from "react-icons/hi"
+
 
 
 const skills = [
@@ -77,6 +79,18 @@ function AboutSection() {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className='flex flex-row items-center text-center justify-center'>
+                <Link
+                    to="about"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}       
+                >
+                    <HiArrowDown className='animate-bounce' size={34}/>
+                </Link>                
             </div>
         </section>
     )
