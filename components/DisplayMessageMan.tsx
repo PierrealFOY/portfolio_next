@@ -3,7 +3,8 @@
 import React from 'react'
 import { useState } from 'react'
 import Image from "next/image"
-import Link from 'next/link'
+// import Link from 'next/link'
+import { Link } from "react-scroll/modules";
 import { FaArrowRight } from 'react-icons/fa'
 import { HiArrowDown } from "react-icons/hi"
 
@@ -40,19 +41,19 @@ function DisplayMessageMan() {
     return (
         <section id="contacts">
             <div 
-                className="mt-5 flex flex-col md:flex-row"
+                className="md:mt-9 flex flex-col md:flex-row md:py-52"
                 onMouseEnter={handleMouseOver}
                 onMouseLeave={handleMouseOut}
             >
             <div className="md:hidden flex flex-wrap flex-col overflow-hidden rounded-lg border-4 p-3">
                 {contacts.map((item, id) => (
                     <Link
-                    key={id}
-                    href={item.adress}
-                    target="_blank"
-                    className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                        key={id}
+                        href={item.adress}
+                        target="_blank"
+                        className="justify-center bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
                     >
-                    {item.network + ' : ' + item.adress}
+                        {item.network + ' : ' + item.adress}
                     </Link>
                 ))}
             </div>
@@ -91,18 +92,6 @@ function DisplayMessageMan() {
                         <FaArrowRight className="text-3xl" />
                     </div>
                 </div>
-            </div>
-            <div className='flex flex-row items-center text-center justify-center'>
-                <Link
-                    to="projects"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}       
-                >
-                    <HiArrowDown className='animate-bounce' size={34}/>
-                </Link>                
             </div>
         </section>
     )
