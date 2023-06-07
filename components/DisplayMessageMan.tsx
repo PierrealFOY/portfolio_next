@@ -5,6 +5,8 @@ import { useState } from 'react'
 import Image from "next/image"
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
+import { HiArrowDown } from "react-icons/hi"
+
 
 
 function DisplayMessageMan() {
@@ -89,6 +91,18 @@ function DisplayMessageMan() {
                         <FaArrowRight className="text-3xl" />
                     </div>
                 </div>
+            </div>
+            <div className='flex flex-row items-center text-center justify-center'>
+                <Link
+                    to="projects"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}       
+                >
+                    <HiArrowDown className='animate-bounce' size={34}/>
+                </Link>                
             </div>
         </section>
     )
