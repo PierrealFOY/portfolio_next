@@ -42,7 +42,7 @@ function AboutSection() {
                             <span className='mt-3'>
                                 <Link 
                                     className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 border border-teal-700 rounded ml-2 mt-2"
-                                    to="/CV_PA.pdf"
+                                    href="/CV_PA.pdf"
                                     target="_blank"
                                 >
                                     Mon CV
