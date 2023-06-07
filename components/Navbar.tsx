@@ -12,7 +12,7 @@ interface NavItem {
     page: string
 }
 
-const NAV_ITEMS: Array<NavItem> = [
+const NavItems = [
     {
         label: "Home",
         page: "home",
@@ -41,7 +41,7 @@ function Navbar (): React.JSX.Element {
                         <div className="md:py-5 md:block">
                             <h2 className="pr-4 text-2xl font-bold">Pierre-Alexis Foy</h2>
                         </div>
-                            <div className="md-hidden">
+                            <div className="md:hidden">
                                 <button 
                                     onClick={() => setBurgerMenu(!burgerMenu)}
                                 >
@@ -51,7 +51,7 @@ function Navbar (): React.JSX.Element {
                     </div>
                 </div>
                 <div className=" items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                    {NAV_ITEMS.map((item, idx) => {
+                    {NavItems.map((item, idx) => {
                         return (
                             <Link 
                             key={idx}

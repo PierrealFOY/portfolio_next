@@ -20,18 +20,11 @@ const projects = [
     },
     {
         name: "Age Calculator",
-        description: " Petite application permettant de calculer son age en années, en mois et en jours. ",
-        image: "/",
+        description: "Petite application web permettant de calculer son age en années, en mois et en jours. ",
+        image: "/ageCalculator.jpg",
         link: "https://pierrealfoy.github.io/Age_Calculator_Js/",
         gitRepo: "https://github.com/PierrealFOY/Age_Calculator_Js"
     },
-    {
-        name: "",
-        description: "",
-        image: "/",
-        link: "",
-        gitRepo: ""
-    }
 ]
 
 function ProjectsSection() {
@@ -96,6 +89,7 @@ function ProjectsSection() {
             </div>
             <div className='flex flex-row py-10 text-2xl md:space-x-10 font-bold'>
                 <h2>
+                    J'ai codé énormément (la grande majorité) des applications et composants web au cours de ma formation chez O'Clock. Pour des raisons légales et de droit de propriété, je ne peux pas les présenter, ainsi que leurs repos sur GitHub. Mais demandez moi plus d'infos sur les composants et applications codés !
                     Il y a encore plein d'autres applications et projets en cours et à venir... 
                 </h2>
                 <p>
