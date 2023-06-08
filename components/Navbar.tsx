@@ -7,7 +7,8 @@ import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
-interface NavItem {
+// It is the equivalent of PropTypes but with Next, TypeScript is directly included
+interface NavItems {
     label: string
     page: string
 }
@@ -23,7 +24,7 @@ const NavItems = [
     },
     {
         label: "Projets",
-        page: "projects",
+        page: "projectsSection",
     }
 ]
 
@@ -41,6 +42,13 @@ const Navbar = () => {
                         <div className="md:py-5 md:block">
                             <h2 className="pr-4 text-2xl font-bold">Pierre-Alexis Foy</h2>
                         </div>
+                        {/*
+                            Here, we hide the burgerMenu in desktop screen (md with tailwind)
+                            This burgerMenu is avaliable in smaller screen (like phone)
+                            When we click on the button, it displays or not the burgerMenu
+                            We use a ternary expression : burgerMenu is true, we displays a close button 
+                            BurgerMenu is false, it changes to a burgermenu to open with three horinzontal lines
+                         */}
                             <div className="md:hidden">
                                 <button 
                                     className="p-2"
@@ -57,7 +65,9 @@ const Navbar = () => {
 
                         className={'flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ' + (burgerMenu ? 'block' : 'hidden')}
                     >
-
+                        {/*
+                            We map our navItems array of objects coded above here 
+                         */}
                         <div className=" items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             {NavItems.map((item, idx) => {
                                 return (
@@ -78,6 +88,12 @@ const Navbar = () => {
                                     </Link>
                                 )
                             })}
+                            {/*
+                                Here, we switch (toggle) the theme onClick on the button
+                                We use a ternary expression : dark is true, we click on the button so
+                                we switch in light theme. If not, dark is false so we are in light theme 
+                                so when we click we pass in dark theme
+                         */}
                             {currentTheme === "dark" ? (
                                 <button 
                                     onClick={() => setTheme("light")}
