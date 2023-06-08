@@ -40,7 +40,7 @@ function DisplayMessageMan() {
     return (
         <section id="contacts">
             <div 
-                className="md:mt-9 flex flex-col md:flex-row md:py-52"
+                className=" md:mt-9 flex flex-col md:flex-row md:py-52"
                 onMouseEnter={handleMouseOver}
                 onMouseLeave={handleMouseOut}
             >
@@ -56,18 +56,18 @@ function DisplayMessageMan() {
                     </Link>
                 ))}
             </div>
+            {/*
+                The bloc below is hidden on small screen. The image is only visible on md and upper screen.
+            */}
                 <div className="hidden md:flex md:flex-row md:mr-1 md:mt-2">
                     <h2 className="pr-8 text-xl font-bold flex items-center justify-center">
                         Pour me contacter, survole moi avec ta souris
                     </h2>
                     <Image src="/manSayHiAbout.svg" alt="" width={300} height={300} />
                 </div>
-                {/* <div
-                    className="pl-3 relative"
 
-                > */}
                 {hover && (
-                    <div className="md:flex md:flex-wrap md:flex-col md:overflow-hidden md:rounded-lg md:border-4 md:p-3">
+                    <div className="hidden md:flex md:flex-wrap md:flex-col md:overflow-hidden md:rounded-lg md:border-4 md:p-3">
                         <h2 className="md:text-left-0 text-2xl font-bold flex items-center justify-center">
                             Pour me contacter :
                         </h2>
@@ -85,12 +85,6 @@ function DisplayMessageMan() {
                         })}
                     </div>
                 )}
-                <div className="absolute top-0 right-0 p-4">
-                    <div className="flex items-center">
-                        <p className="pr-2 ease-in duration-300"></p>
-                        <FaArrowRight className="text-3xl" />
-                    </div>
-                </div>
             </div>
         </section>
     )

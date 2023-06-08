@@ -4,7 +4,6 @@ import React from 'react'
 import Image from "next/image"
 import Link from 'next/link'
 import { Link as Scroller} from "react-scroll/modules";
-
 import { Button } from '@mui/material';
 import { HiArrowDown } from "react-icons/hi"
 

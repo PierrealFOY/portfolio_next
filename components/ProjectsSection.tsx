@@ -7,7 +7,7 @@ import { Link as Scroll }   from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi"
 import { FiGithub } from "react-icons/fi"
 import { FiExternalLink } from "react-icons/fi"
-import { RxLapTimer } from "react-icons/rx"
+import { ImHourGlass } from "react-icons/im"
 
 /* eslint-disable react/no-unescaped-entities */
 
@@ -58,7 +58,7 @@ function ProjectsSection() {
                                         <h1 className='text-4xl font-bold mb6'>
                                             {project.name}
                                         </h1>
-                                        <p className='text-xl leading-7 text-neutral-600 dark:text-neutral-400 '>
+                                        <p className='pt-2 text-xl leading-7 text-neutral-600 dark:text-neutral-400 '>
                                             {project.description}
                                         </p>
                                         <div className='flex flex-row pt-4 space-x-5'>
@@ -90,13 +90,13 @@ function ProjectsSection() {
             </div>
             <div className='flex flex-row py-10 text-xl md:space-x-10 font-bold'>
                 <h2>
-                    J'ai énormément codé (la grande majorité) les applications et composants web au cours de ma formation chez O'Clock. Pour des raisons légales et de droit de propriété, je ne peux pas les présenter, ainsi que leurs repos sur GitHub. Mais demandez moi plus d'infos sur les composants et applications codés !
-                    Il y a encore plein d'autres applications et projets en cours et à venir... 
+                    J'ai énormément codé (la grande majorité) des applications et composants web au cours de ma formation chez O'Clock. Pour des raisons légales et de droit de propriété, je ne peux pas les présenter, ainsi que leurs repos sur GitHub. Mais demandez moi plus d'infos sur les composants et applications codés !
+                    Il y a encore plein d'autres applications et projets en cours... 
                 </h2>
                 <p>
-                    <RxLapTimer 
+                    <ImHourGlass 
                         size={40}
-                        className="animate-spin"
+                        className="animate-spin-slow duration-4000"
                     />
                 </p>
             </div>
