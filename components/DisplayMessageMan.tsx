@@ -61,7 +61,7 @@ function DisplayMessageMan() {
             */}
                 <div className="hidden md:flex md:flex-row md:mr-1 md:mt-2">
                     <h2 className="pr-8 text-xl font-bold flex items-center justify-center">
-                        Pour me contacter, survole moi avec ta souris
+                        Pour me contacter, passe ta souris sur lui :
                     </h2>
                     <Image src="/manSayHiAbout.svg" alt="" width={300} height={300} />
                 </div>
