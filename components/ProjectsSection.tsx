@@ -14,7 +14,7 @@ import { ImHourGlass } from "react-icons/im"
 const projects = [ 
     {
         name: "What's The Movie ?",
-        description: " Projet de fin d'études durant ma formation de Développeur Web et Web Mobile. Site où l'utilisateur peut jouer à un quiz sur le milieu du cinéma. Parmi 4 propositions, l'utilisateur doit trouver le bon film, un timer défile et des indices apparaissent pour l'aider. Back Office créé avec Symfony et BootStrap. Des rôles administrateurs sont créés pour gérer le site. Un utilisateur peut connecté peut ajout des films en Base De Données qui devront au préalable être validés par les administrateurs. Nous étions 6 développeurs pour coder ce site from scratch en méthode Agile pendant 4 semaines. ",
+        description: " Projet de fin d'études durant ma formation de Développeur Web et Web Mobile. Site où l'utilisateur peut jouer à un quiz sur le thème du cinéma. Le but étant, pour l'utilisateur de trouver le bon film parmi 4 propositions avant la fin du timer. Pour l'aider, des indices apparaissent à interval régulier. Le Back Office  a été créé avec Symfony et BootStrap. Des rôles administrateurs sont créés pour gérer le site. Un utilisateur connecté peut ajouter des films en Base De Données, qui devront au préalable être validés par les administrateurs. Nous étions 6 développeurs pour coder ce site from scratch en méthode Agile pendant 4 semaines. ",
         image: "/wtmImage.png",
         link: "https://whats-the-movie.timothe-bequet.fr/",
         // gitRepo: ""
@@ -90,7 +90,7 @@ function ProjectsSection() {
             </div>
             <div className='flex flex-row py-10 text-xl md:space-x-10 font-bold'>
                 <h2>
-                    J'ai énormément codé (la grande majorité) des applications et composants web au cours de ma formation chez O'Clock. Pour des raisons légales et de droit de propriété, je ne peux pas les présenter, ainsi que leurs repos sur GitHub. Mais demandez moi plus d'infos sur les composants et applications codés !
+                    La grande majorité des applications et composants web que j'ai codé ont été réalisés dans le cadre de ma formation chez O'Clock. Pour des raisons légales et de droit de propriété, je ne peux pas les présenter, ainsi que leurs repositories sur GitHub. Mais demandez moi plus d'infos sur les composants et applications codés !
                     Il y a encore plein d'autres applications et projets en cours... 
                 </h2>
                 <p>
