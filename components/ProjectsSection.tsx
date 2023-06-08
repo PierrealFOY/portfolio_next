@@ -30,7 +30,7 @@ const projects = [
 
 function ProjectsSection() {
     return (
-        <section id="projectsSection" className='my-12 pb-12 md:pt-16 md:pb-26'> 
+        <section id="projectsSection" className='my-12 pb-18 md:pt-16 md:pb-30'> 
             <div>
                 <h1 className='my-12 text-center font-bold text-4xl'>
                     Projets
@@ -100,7 +100,7 @@ function ProjectsSection() {
                     />
                 </p>
             </div>
-            <div className='flex flex-row items-center text-center justify-center'>
+            <div className='flex flex-row items-center text-center justify-center md:pt-12'>
                 <Scroll
                     to="contacts"
                     activeClass="active"

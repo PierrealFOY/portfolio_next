@@ -22,7 +22,7 @@ function PersonalSection() {
                 </div>
                 <div className='md:mt-2 md:w-3/5 '>
                     <h1 className='font-bold text-4xl mt-6 md:text-7xl md:mt-0 '> Bonjour, bienvenue sur mon Portfolio !</h1>
-                    <p className='text-lg mt-4 mb-6 md:text-2xl hover:shadow-lg hover:shadow-orange-500'>
+                    <p className='p-2 md:p-2 text-lg mt-4 mb-6 md:text-2xl hover:shadow-lg hover:shadow-orange-500'>
                         Je m'appelle Pierre-Alexis Foy, j'ai 28 ans et j'habite à Rennes. Je suis développeur et actuellement
                         à la recherche d'une alternance dans le cadre de la formation Concepteur Développeur d'Applications 
                         à partir de Septembre 2023.
