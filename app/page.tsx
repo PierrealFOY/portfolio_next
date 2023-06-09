@@ -2,6 +2,8 @@ import PersonalSection from "@/components/PersonalSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import DisplayMessageMan from "@/components/DisplayMessageMan";
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function Home() {
   return (
@@ -10,6 +12,9 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <DisplayMessageMan />
+      <Analytics />
     </main>
   )
 }
+
+
