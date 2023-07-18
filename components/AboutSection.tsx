@@ -34,8 +34,8 @@ function AboutSection() {
                             Quelques infos
                         </h1>
                         <p className='flex flex-wrap md:mt-5 md:ml-2 text-2xl'>
-                            Après avoir effectué la formation Développeur Web et Web Mobile au sein de l'Ecole O'Clock et avoir obtenu le Titre Professionnel du même nom (DWWM), j'ai décidé de continuer à me former dans le domaine du développement. A partir de Septembre 2023, je continue l'aventure avec l'école O'Clock, cette fois-ci en tant qu'alternant dans le cadre de la formation Concepteur Développeur d'Applications.
-                            Je suis donc à la recherche d'une entreprise en contrat d'apprentissage, en partenariat avec le CFA Afia, qui s'occupe du suivi de mon alternance et de la partie administrative de celle-ci.
+                            Après avoir effectué la formation Développeur Web et Web Mobile au sein de l'Ecole O'Clock et avoir obtenu le Titre Professionnel du même nom (DWWM), j'ai décidé de continuer à me former dans le domaine du développement. A partir de Septembre 2023, je continue l'aventure, cette fois-ci en tant qu'alternant dans le cadre de la formation Concepteur Développeur d'Applications.
+                            Je suis donc à la recherche d'une entreprise en contrat d'apprentissage qui me donnera la chance de mettre à profit ma curiosité, ma motivation et ma créativité au sein de ses équipes.
                             La formation m'a permis de réaliser de nombreuses applications et fonctionnalités web, autant coté Front que côté Back. 
                             Pour accéder à mon CV c'est juste en dessous :
                             <span className='mt-3'>
